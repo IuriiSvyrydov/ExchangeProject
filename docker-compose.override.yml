@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  exchangeproject.web:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
