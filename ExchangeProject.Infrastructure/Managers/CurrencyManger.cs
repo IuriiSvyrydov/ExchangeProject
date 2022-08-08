@@ -3,6 +3,8 @@ using CurrencyExchangeConvrtrtor.Core.Repositories;
 using ExchangeProject.Core.Enums;
 using ExchangeProject.Core.Managers;
 using ExchangeProject.Core.Models;
+using ExchangeProject.Core.Repositories;
+using ExchangeProject.Infrastructure.DTOs;
 using ExchangeProject.Infrastructure.Models;
 using Newtonsoft.Json;
 

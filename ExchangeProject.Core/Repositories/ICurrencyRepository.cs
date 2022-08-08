@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ExchangeProject.Core.Models;
+﻿using ExchangeProject.Core.Models;
 
-namespace CurrencyExchangeConvrtrtor.Core.Repositories
+namespace ExchangeProject.Core.Repositories
 {
     public interface ICurrencyRepository
     {

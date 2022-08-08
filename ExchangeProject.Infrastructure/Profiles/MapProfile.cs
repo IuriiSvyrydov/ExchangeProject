@@ -1,5 +1,6 @@
 ﻿using ExchangeProject.Core.Models;
 using ExchangeProject.Infrastructure.DTOs;
+using ExchangeProject.Infrastructure.Models;
 
 namespace ExchangeProject.Infrastructure.Profiles
 {
@@ -9,6 +10,7 @@ namespace ExchangeProject.Infrastructure.Profiles
         {
             CreateMap<CurrencyDto, Currency>().ReverseMap();
             CreateMap<ExchangeDto, Exchange>().ReverseMap();
+            CreateMap<CurrencyModel, Currency>().ReverseMap();
         }
     }
 }

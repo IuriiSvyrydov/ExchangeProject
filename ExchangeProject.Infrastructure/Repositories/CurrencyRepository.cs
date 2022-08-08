@@ -3,6 +3,7 @@ using CurrencyExchangeConvrtrtor.Core.Repositories;
 using ExchangeProject.Core.Models;
 using ExchangeProject.Infrastructure.Data;
 using System.Linq;
+using ExchangeProject.Core.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 

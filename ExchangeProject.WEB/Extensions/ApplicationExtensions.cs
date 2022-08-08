@@ -1,8 +1,6 @@
-﻿using CurrencyExchangeConvrtrtor.Core.Repositories;
-using ExchangeProject.Core.Managers;
-using ExchangeProject.Infrastructure.Managers;
+﻿using ExchangeProject.Infrastructure.Managers;
 using ExchangeProject.Infrastructure.Repositories;
-using AutoMapper;
+using ExchangeProject.Core.Repositories;
 
 namespace ExchangeProject.WEB.Extensions
 {
