@@ -1,8 +1,19 @@
 version: '3.4'
 
 services:
+  exchangedb:
+   container_name: currencydb
+   restart: always
+   ports:
+    - "3306:3306" 
+   volumes:
+    - exchange_data:/data/db
+  
   exchangeproject.web:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings:DefaultConnection:Server=localhost;user=root;database=currencydb;password=test123;port=3306
+    depends_on:
+      - exchangedb
     ports:
-      - "80"
+      - "8000:80"

@@ -1,8 +1,20 @@
 version: '3.4'
 
 services:
+  exchangedb:
+    image: exchange
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: test123
+      MYSQL_DATABASE: currencydb
+      MYSQL_USER: root
+      MYSQL_PASWORD: test123
+
   exchangeproject.web:
     image: ${DOCKER_REGISTRY-}exchangeprojectweb
     build:
       context: .
       dockerfile: ExchangeProject.WEB/Dockerfile
+volumes:
+  exchange_data:
+   
